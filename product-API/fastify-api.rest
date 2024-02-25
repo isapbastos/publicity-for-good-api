@@ -1,0 +1,51 @@
+### get products
+GET http://localhost:3000/api/products
+###
+
+### get product
+GET http://localhost:3000/api/products/1
+###
+
+### post product
+POST http://localhost:3000/api/products HTTP/1.1
+content-type: application/json 
+
+{
+    "name": "name",
+    "description": "description",
+    "price": 123,
+    "availability": false
+}
+
+###
+
+### put product
+PUT http://localhost:3000/api/products/1 HTTP/1.1
+content-type: application/json 
+
+{
+    "name": "name new",
+    "description": "description new",
+    "price": 12321,
+    "availability": true
+}
+###
+
+### delete product
+DELETE http://localhost:3000/api/products/1 HTTP/1.1
+###
+
+### post login
+POST http://localhost:3000/api/login HTTP/1.1
+content-type: application/json 
+
+{
+    "login": "admin",
+    "password": "admin"
+}
+###
+
+### get products
+GET http://localhost:3000/api/posts HTTP/1.1
+authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzA4ODMxNTY2LCJleHAiOjE3MDg4MzUxNjZ9.Q5J7dAR2Kx-Xf-PQbfi_VslI80YmadQWUB5e64b0jwU
+###
